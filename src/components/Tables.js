@@ -1,93 +1,50 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table'
+import { useState } from 'react'
+import Like from './Like'
 
 const Tables = () => {
+
+
+
+  // const like = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false,]
+
+  // const songs = ['Party in the USA', 'Mr. Brightside', 'Wonderwall', 'Love Story', 'Mama Mia', 'Sk8er Boi', 'Stacys Mom', 'Love Machine', 'Single Ladies', 'Dont Stop Mobin', 'Rock DJ', 'Beat Again', 'What Makes You Beautiful', 'Wake Me Up Before You Go-Go', 'Rockstar']
+  // const artists = ['Miley Cyrus', 'The Killers', 'Oasis', 'Taylor Swift', 'ABBA', 'Avril Lavigne', 'Fountains of Wayne', 'Girls Aloud', 'Beyonce', 'S Club 7', 'Robbie Williams', 'JLS', 'One Direction', 'Wham!', 'Nickelback']
+
+
+
     return (
+
         <div className = "tablemargin border border-dark">
+
+          
 <Table striped bordered hover size="sm" >
   <thead>
     <tr>
       <th>Song</th>
       <th>Artist</th>
       <th>Link</th>
+      <th>Like</th>
     </tr>
   </thead>
   <tbody>
-    <tr className = "table-success">
-      <td>Party in the USA</td>
-      <td>Miley Cyrus</td>
-      <td>https://open.spotify.com/track/3E7dfMvvCLUddWissuqMwr?si=b5a7f086e701472f</td>
-    </tr>
-    <tr className = "table-primary">
-      <td>Mr. Brightside</td>
-      <td>The Killers</td>
-      <td>https://open.spotify.com/track/7d8GetOsjbxYnlo6Y9e5Kw?si=388532ef4e25491c</td>
-    </tr>
-    <tr className = "table-danger">
-      <td>Wonderwall</td>
-      <td>Oasis</td>
-      <td>https://open.spotify.com/track/3UNAMgNHKl0fWzbZaU0fDM?si=a5603bdfb79c4fcb</td>
-    </tr>
-    <tr className = "table-warning">
-      <td>Love Story</td>
-      <td>Taylor Swift</td>
-      <td>https://open.spotify.com/track/1D4PL9B8gOg78jiHg3FvBb?si=296fc45511934432</td>
-    </tr>
-    <tr className = "table-success">
-      <td>Mamma Mia</td>
-      <td>ABBA</td>
-      <td>https://open.spotify.com/track/2TxCwUlqaOH3TIyJqGgR91?si=847dbaa933894b3b</td>
-    </tr>
-    <tr className = "table-primary">
-      <td>Sk8er Boi</td>
-      <td>Avril Lavigne</td>
-      <td>https://open.spotify.com/track/00Mb3DuaIH1kjrwOku9CGU?si=494cada2043f4516</td>
-    </tr>
-    <tr className = "table-danger">
-      <td>Stacy's Mom</td>
-      <td>Fountains of Wayne</td>
-      <td>https://open.spotify.com/track/27L8sESb3KR79asDUBu8nW?si=9df00dbba91d4fac</td>
-    </tr>
-    <tr className = "table-warning">
-      <td>Love Machine</td>
-      <td>Girls Aloud</td>
-      <td>https://open.spotify.com/track/6SHvqMjPEQqyJaxuEzNcr3?si=04ae1c4d2b3a47df</td>
-    </tr>
-    <tr className = "table-success">
-      <td>Single Ladies</td>
-      <td>Beyonce</td>
-      <td>https://open.spotify.com/track/557un1HgwYMuqfWGSTmnxw?si=c6a9c85bb2084d7b</td>
-    </tr >
-    <tr className = "table-primary">
-      <td>Don't Stop Movin'</td>
-      <td>S Club 7</td>
-      <td>https://open.spotify.com/track/4dzreTCcGVgeF1vCcd22AC?si=198400ae0a144b69</td>
-    </tr>
-    <tr className = "table-danger">
-      <td>Rock DJ</td>
-      <td>Robiie Williams</td>
-      <td>https://open.spotify.com/track/4pbyDPjFgfPqFTcIMC8xpK?si=a42651a1bc9b4cb4</td>
-    </tr>
-    <tr className = "table-warning">
-      <td>Beat Again</td>
-      <td>JLS</td>
-      <td>https://open.spotify.com/track/4GF6mCFaQbdqVtfbuLW7Fe?si=a72e66e6066f4d93</td>
-    </tr>
-    <tr className = "table-success">
-      <td>What Makes You Beautiful</td>
-      <td>One Direction</td>
-      <td>https://open.spotify.com/track/4cluDES4hQEUhmXj6TXkSo?si=3b30d6bf939d473e</td>
-    </tr>
-    <tr className = "table-primary">
-      <td>Wake Me Up Before You Go-Go</td>
-      <td>Wham!</td>
-      <td>https://open.spotify.com/track/0ikz6tENMONtK6qGkOrU3c?si=c97724e623f148e0</td>
-    </tr>
-    <tr className = "table-danger">
-      <td>Rockstar</td>
-      <td>Nickelback</td>
-      <td>https://open.spotify.com/track/3RlsVPIIs5KFhLFhxZ4iDF?si=56df2c513207461b</td>
-    </tr>
+  <Like color = 'table-success'song='Party in the USA' artist = "Miley Cyrus" link = "https://open.spotify.com/track/3E7dfMvvCLUddWissuqMwr?si=e52d0e7972b04f14"/>
+  <Like color = 'table-primary'song='Mr. Brightside' artist = "The Killers" link = "https://open.spotify.com/track/7d8GetOsjbxYnlo6Y9e5Kw?si=388532ef4e25491c"/>
+  <Like color = 'table-danger'song='Wonderwall' artist = "Oasis" link = "https://open.spotify.com/track/3UNAMgNHKl0fWzbZaU0fDM?si=a5603bdfb79c4fcb"/>
+  <Like color = 'table-warning'song='Love Story' artist = "Taylor Swift" link = "https://open.spotify.com/track/1D4PL9B8gOg78jiHg3FvBb?si=296fc45511934432"/>
+  <Like color = 'table-success'song='Mamma Mia' artist = "ABBA" link = "https://open.spotify.com/track/2TxCwUlqaOH3TIyJqGgR91?si=847dbaa933894b3b"/>
+  <Like color = 'table-primary'song='Sk8er Boi' artist = "Avril Lavigne" link = "https://open.spotify.com/track/00Mb3DuaIH1kjrwOku9CGU?si=494cada2043f4516"/>
+  <Like color = 'table-danger'song='Stacys Mom' artist = "Fountains of Wayne" link = "https://open.spotify.com/track/27L8sESb3KR79asDUBu8nW?si=9df00dbba91d4fac"/>
+  <Like color = 'table-warning'song='Love Machine' artist = "Girls Aloud" link = "https://open.spotify.com/track/6SHvqMjPEQqyJaxuEzNcr3?si=04ae1c4d2b3a47df"/>
+  <Like color = 'table-success'song='Single Ladies' artist = "Beyonce" link = "https://open.spotify.com/track/557un1HgwYMuqfWGSTmnxw?si=c6a9c85bb2084d7b"/>
+  <Like color = 'table-primary'song='Dont Stop Movin' artist = "S Club 7" link = "https://open.spotify.com/track/4dzreTCcGVgeF1vCcd22AC?si=198400ae0a144b69"/>
+  <Like color = 'table-danger'song='Rock DJ' artist = "Robbie Williams" link = "https://open.spotify.com/track/4pbyDPjFgfPqFTcIMC8xpK?si=a42651a1bc9b4cb4"/>
+  <Like color = 'table-warning'song='Beat Again' artist = "JLS" link = "https://open.spotify.com/track/4GF6mCFaQbdqVtfbuLW7Fe?si=a72e66e6066f4d93"/>
+  <Like color = 'table-success'song='What Makes You Beautiful' artist = "One Direction" link = "https://open.spotify.com/track/4cluDES4hQEUhmXj6TXkSo?si=3b30d6bf939d473e"/>
+  <Like color = 'table-primary'song='Wake Me Up Before You Go-Go' artist = "Wham!" link = "https://open.spotify.com/track/0ikz6tENMONtK6qGkOrU3c?si=c97724e623f148e0"/>
+  <Like color = 'table-danger'song='Rockstar' artist = "Nickelback" link = "https://open.spotify.com/track/3RlsVPIIs5KFhLFhxZ4iDF?si=56df2c513207461b"/>
+    
   </tbody>
 </Table>
         </div>
