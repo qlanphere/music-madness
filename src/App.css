@@ -38,11 +38,19 @@
   margin: 20px;
 }
 
+.right-margin {
+  margin-right: 10px;
+}
+
 .tablemargin {
   margin-left:40px;
   margin-right: 40px;
   margin-top:40px;
   margin-bottom: 0px;
+}
+
+.footer-margin {
+  margin: 50px;
 }
 
 @keyframes App-logo-spin {

@@ -9,13 +9,16 @@ const Like = (props) => {
   
     const liked = like ? '👎':'👍'
 
+ 
+
     return (
         
-            <tr className = {props.color}>
+            <tr className = {props.color} >
                 <td>{props.song}</td>
                 <td>{props.artist}</td>
                 <td>{props.link}</td>
                 <td><span data-testid = "span" onClick = {likeit}>{liked}</span></td>
+                <td><button id = {`${props.song}_${props.artist}`} onClick = {props.function}>Get Lyrics</button></td>
             </tr>
     )
 }
