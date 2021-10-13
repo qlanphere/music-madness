@@ -34,8 +34,23 @@
   font-size: 1.75rem;
 }
 
+.imgsmargin {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imgmargin {
+  margin: 75px;
+}
+
 .bodymargin {
   margin: 20px;
+}
+
+.lyrics {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 .right-margin {

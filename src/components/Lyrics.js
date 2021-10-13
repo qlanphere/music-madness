@@ -1,12 +1,11 @@
 import React, {useState, useEffect,} from 'react'
-import axios from 'axios'
 
 const Lyrics = (props) => {
 
  
 
     return (
-        <div>
+        <div className = "lyrics">
             {props.lyrics}
         </div>
     )

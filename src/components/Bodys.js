@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 
 
-const Body = () => {
+const Bodys = () => {
     return (
         <div className = "bodymargin">
             <Container>
@@ -27,4 +27,4 @@ const Body = () => {
     )
 }
 
-export default Body
+export default Bodys

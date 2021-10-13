@@ -3,17 +3,6 @@ import Button from './Button'
 import { useState } from 'react'
 
 
-// let string
-
-
-
-
-// const onClick = (e) => {
-//     e.preventDefault()
-//     const song = document.getElementById('songRequest').value
-//     string = `Your song request of ${song} has been submitted`
-
-// }
 
 const Footer = () => {
 
