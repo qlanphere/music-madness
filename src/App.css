@@ -77,4 +77,10 @@
   }
 }
 
+.back {
+  border-radius: 15px;
+  background-color: steelblue;
+  color: white;
+}
+
 
